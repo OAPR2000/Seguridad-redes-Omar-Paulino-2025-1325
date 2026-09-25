@@ -96,27 +96,5 @@ Todos los scripts están en [`/scripts`](scripts/):
 
 ## 5. Running-Configs
 
-- **Switch SW-1325:** [`configs/switch-running-config.txt`](configs/switch-running-config.txt) (configuración completa también en `scripts/switch/switch-config.txt`).
-- **FortiGate FW-1325:** exportar el respaldo oficial desde `System → Firmware & Configuration → Backup Configuration` y subirlo como [`configs/FW-1325-backup.conf`](configs/FW-1325-backup-INSTRUCCIONES.txt) (ver instrucciones en ese archivo).
-
----
-
-## 6. Estructura del Repositorio
-
-```
-/
-├── README.md                     <- este archivo (video al inicio)
-├── demo/
-│   └── video-demostracion.mp4
-├── docs/
-│   └── Documentacion-2025-1325.pdf
-├── images/                       <- capturas usadas en esta documentación
-├── configs/
-│   ├── switch-running-config.txt
-│   └── FW-1325-backup.conf
-└── scripts/
-    ├── switch/switch-config.txt
-    ├── fortigate/fw-1325-bootstrap.txt
-    ├── fortigate/ips-sqli-signatures.txt
-    └── servers/ (netplan, setup-mysql.sql, index.php, generate_pe.py)
-```
+- **Switch SW-1325:** (
+- `scripts/switch/switch-config.txt`).
