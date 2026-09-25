@@ -1,4 +1,4 @@
-! Unico paso realizado por CLI (todo lo demas se configuro por GUI):
+Unico paso realizado por CLI (todo lo demas se configuro por GUI):
 config system interface
     edit "port1"
         set mode static
