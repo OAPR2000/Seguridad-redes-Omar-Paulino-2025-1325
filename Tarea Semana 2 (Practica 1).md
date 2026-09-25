@@ -25,7 +25,7 @@ Con esta topología demuestro, de forma práctica:
 
 ## 2. Repositorio de GitHub
 
-Este repositorio contiene toda la evidencia y el material del laboratorio en un único archivo Markdown (este documento) más su carpeta de imágenes, para que quede todo centralizado y fácil de revisar: video al inicio, propósito, topología con diagramas, evidencia de configuración con capturas reales de la GUI, todos los scripts que usé y las running-configs del switch.
+Este repositorio contiene toda la evidencia y el material del laboratorio en un único archivo (este documento) más su carpeta de imágenes, para que quede todo centralizado y fácil de revisar: video al inicio, propósito, topología con diagramas, evidencia de configuración con capturas reales de la GUI, todos los scripts que usé y las running-configs del switch.
 
 ## 3. Topología de red
 
