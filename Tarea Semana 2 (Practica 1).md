@@ -5,8 +5,7 @@
 
 ## Video de demostración
 
-**[Ver video de demostración](video-demostracion.mp4)**
-*(el archivo `video-demostracion.mp4` va en esta misma carpeta del repositorio, al inicio de todo — GitHub no permite incrustar video dentro de un Markdown, así que queda enlazado aquí arriba, antes de cualquier otro contenido).*
+https://youtu.be/X-J69JoAo4g
 
 ---
 
