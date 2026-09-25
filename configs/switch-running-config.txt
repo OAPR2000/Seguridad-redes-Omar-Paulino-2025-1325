@@ -1,0 +1,10 @@
+! Running-config de SW-1325 (equivalente a "show running-config").
+! Aplicado y guardado con: copy running-config startup-config
+!
+! Ver contenido completo en: /scripts/switch/switch-config.txt
+!
+! NOTA: antes de apagar el equipo en GNS3, confirmar el guardado con:
+!   copy running-config startup-config
+! (la running-config de un IOS vive en RAM y se pierde al reiniciar si no
+!  se guarda explicitamente en la startup-config; esto NO aplica al
+!  FortiGate ni a los servidores Ubuntu, cuyo estado persiste en disco).

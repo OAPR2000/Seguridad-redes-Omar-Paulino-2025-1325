@@ -1,0 +1,11 @@
+network:
+  version: 2
+  ethernets:
+    ens3:
+      addresses: [10.13.25.130/28]
+      mtu: 1300
+      routes:
+        - to: default
+          via: 10.13.25.129
+      nameservers:
+        addresses: [8.8.8.8, 1.1.1.1]
