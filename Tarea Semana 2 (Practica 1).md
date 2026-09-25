@@ -279,7 +279,3 @@ network:
     ens3:
       dhcp4: true
 ```
-
-## 6. Running-Config del switch
-
-Ya la incluí completa en la sección **5.1**, para no repetirla dos veces en el repositorio. La guardé en el equipo real con `copy running-config startup-config` antes de apagar los nodos en GNS3 — la running-config de un IOS vive en RAM y se pierde si no se confirma ese guardado; esto no aplica al FortiGate ni a los servidores Ubuntu, cuyo estado persiste en disco.
