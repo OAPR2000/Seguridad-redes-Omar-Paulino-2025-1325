@@ -1,7 +1,0 @@
-Este archivo debe reemplazarse por el respaldo oficial de configuracion
-del FortiGate, exportado desde la propia GUI:
-
-  System -> Firmware & Configuration -> Backup Configuration
-
-Guardar el archivo descargado como: FW-1325-backup.conf
-en esta misma carpeta (/configs), reemplazando este texto.
