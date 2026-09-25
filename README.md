@@ -74,49 +74,7 @@ Todo el direccionamiento IP se derivó de la matrícula del estudiante (**2025-1
 
 ![Logs SQLi bloqueado](images/08_fw_logs_sqli_blocked.png)
 
----
 
-## 4. Scripts Utilizados
+## 4. Running-Configs
 
-Todos los scripts están en [`/scripts`](scripts/):
-
-| Archivo | Descripción |
-|---|---|
-| [`scripts/switch/switch-config.txt`](scripts/switch/switch-config.txt) | Configuración completa del switch SW-1325 (VLAN, port-security, DHCP snooping, DAI, BPDU Guard, storm-control) |
-| [`scripts/fortigate/fw-1325-bootstrap.txt`](scripts/fortigate/fw-1325-bootstrap.txt) | Único comando CLI: IP de gestión de port1 |
-| [`scripts/fortigate/ips-sqli-signatures.txt`](scripts/fortigate/ips-sqli-signatures.txt) | 4 firmas IPS personalizadas (F-SBID) para detección de SQL Injection |
-| [`scripts/servers/db-server/netplan-01-lab.yaml`](scripts/servers/db-server/netplan-01-lab.yaml) | Red de DBSERVER1325 |
-| [`scripts/servers/db-server/setup-mysql.sql`](scripts/servers/db-server/setup-mysql.sql) | Base de datos `tienda`, usuario `webuser` y ajuste `skip-name-resolve` |
-| [`scripts/servers/web-server/netplan-01-lab.yaml`](scripts/servers/web-server/netplan-01-lab.yaml) | Red de WBSERVER1325 |
-| [`scripts/servers/web-server/index.php`](scripts/servers/web-server/index.php) | Endpoint deliberadamente vulnerable, usado para la demo de SQL Injection |
-| [`scripts/servers/web-server/generate_pe.py`](scripts/servers/web-server/generate_pe.py) | Genera un ejecutable PE32 real (`test_real.exe`) para probar el bloqueo de .exe |
-| [`scripts/servers/pc-user/netplan-01-lab.yaml`](scripts/servers/pc-user/netplan-01-lab.yaml) | Cliente por DHCP en VLAN10 |
-
----
-
-## 5. Running-Configs
-
-- **Switch SW-1325:** [`configs/switch-running-config.txt`](configs/switch-running-config.txt) (configuración completa también en `scripts/switch/switch-config.txt`).
-- **FortiGate FW-1325:** exportar el respaldo oficial desde `System → Firmware & Configuration → Backup Configuration` y subirlo como [`configs/FW-1325-backup.conf`](configs/FW-1325-backup-INSTRUCCIONES.txt) (ver instrucciones en ese archivo).
-
----
-
-## 6. Estructura del Repositorio
-
-```
-/
-├── README.md                     <- este archivo (video al inicio)
-├── demo/
-│   └── video-demostracion.mp4
-├── docs/
-│   └── Documentacion-2025-1325.pdf
-├── images/                       <- capturas usadas en esta documentación
-├── configs/
-│   ├── switch-running-config.txt
-│   └── FW-1325-backup.conf
-└── scripts/
-    ├── switch/switch-config.txt
-    ├── fortigate/fw-1325-bootstrap.txt
-    ├── fortigate/ips-sqli-signatures.txt
-    └── servers/ (netplan, setup-mysql.sql, index.php, generate_pe.py)
-```
+- **Switch SW-1325:** [`configs/switch-running-config.txt`](configs/switch-running-config.txt)
